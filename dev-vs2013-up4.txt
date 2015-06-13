@@ -13,8 +13,10 @@ Update-ExecutionPolicy Unrestricted
 # -------------------------------------------------
 # Program installs
 # -------------------------------------------------
-
+choco install adobereader
+choco install javaruntime
 choco install fiddler4 -y
+choco install googlechrome -y
 choco install Firefox -y
 choco install GoogleChrome -y
 choco install nodejs.install -y
@@ -50,3 +52,9 @@ Install-ChocolateyVsixPackage TrailingWhitespaceVisualizer https://visualstudiog
 Install-ChocolateyVsixPackage WebEssentials2013 https://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361/file/105627/44/WebEssentials2013.vsix
 Install-ChocolateyVsixPackage AddNewFile https://visualstudiogallery.msdn.microsoft.com/3f820e99-6c0d-41db-aa74-a18d9623b1f3/file/140782/17/Add%20New%20File%20v2.1.39.vsix
 Install-ChocolateyVsixPackage OpenCommandLin https://visualstudiogallery.msdn.microsoft.com/4e84e2cf-2d6b-472a-b1e2-b84932511379/file/151803/12/Open%20Command%20Line%20v1.7.121.vsix
+
+cinst IIS-WebServerRole -source windowsfeatures
+cinst IIS-HttpCompressionDynamic -source windowsfeatures
+cinst IIS-ManagementScriptingTools -source windowsfeatures
+cinst IIS-WindowsAuthentication -source windowsfeatures
+
