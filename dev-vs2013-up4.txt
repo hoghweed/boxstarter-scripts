@@ -1,0 +1,52 @@
+# -------------------------------------------------
+# Windows configuration changes
+# -------------------------------------------------
+
+Disable-InternetExplorerESC
+Disable-UAC
+Enable-RemoteDesktop
+Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
+Set-TaskbarOptions -Size Small -Lock -Dock Bottom
+Update-ExecutionPolicy Unrestricted
+
+
+# -------------------------------------------------
+# Program installs
+# -------------------------------------------------
+
+choco install fiddler4 -y
+choco install Firefox -y
+choco install GoogleChrome -y
+choco install nodejs.install -y
+choco install notepadplusplus.install -y
+choco install sublimetext3 -y
+choco install sublimetext3.packagecontrol -y
+
+
+# -------------------------------------------------
+# TFS Git integration
+# -------------------------------------------------
+
+choco install git -y
+choco install dogtail.visualstudiotoolsforgit -y
+
+
+# -------------------------------------------------
+# NPM installs
+# -------------------------------------------------
+
+npm install -g grunt-cli
+
+
+# -------------------------------------------------
+# Visual Studio extensions
+# -------------------------------------------------
+
+Install-ChocolateyVsixPackage IndentGuides https://visualstudiogallery.msdn.microsoft.com/e792686d-542b-474a-8c55-630980e72c30/file/48932/20/IndentGuide%20v14.vsix
+Install-ChocolateyVsixPackage PackageIntellisense https://visualstudiogallery.msdn.microsoft.com/65748cdb-4087-497e-a394-2e3449c8e61e/file/138140/17/JSON%20Intellisense.vsix
+Install-ChocolateyVsixPackage ProductivityPowerTools2013 https://visualstudiogallery.msdn.microsoft.com/dbcb8670-889e-4a54-a226-a48a15e4cace/file/117115/4/ProPowerTools.vsix
+Install-ChocolateyVsixPackage TaskRunnerExplorer https://visualstudiogallery.msdn.microsoft.com/8e1b4368-4afb-467a-bc13-9650572db708/file/140636/3/TaskRunnerExplorer.vsix
+Install-ChocolateyVsixPackage TrailingWhitespaceVisualizer https://visualstudiogallery.msdn.microsoft.com/a204e29b-1778-4dae-affd-209bea658a59/file/135653/13/TrailingWhitespace.vsix
+Install-ChocolateyVsixPackage WebEssentials2013 https://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361/file/105627/44/WebEssentials2013.vsix
+Install-ChocolateyVsixPackage AddNewFile https://visualstudiogallery.msdn.microsoft.com/3f820e99-6c0d-41db-aa74-a18d9623b1f3/file/140782/17/Add%20New%20File%20v2.1.39.vsix
+Install-ChocolateyVsixPackage OpenCommandLin https://visualstudiogallery.msdn.microsoft.com/4e84e2cf-2d6b-472a-b1e2-b84932511379/file/151803/12/Open%20Command%20Line%20v1.7.121.vsix
