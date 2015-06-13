@@ -4,10 +4,10 @@
 
 Disable-InternetExplorerESC
 Disable-UAC
-Enable-RemoteDesktop
-Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
-Set-TaskbarOptions -Size Small -Lock -Dock Bottom
-Update-ExecutionPolicy Unrestricted
+#Enable-RemoteDesktop
+#Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
+#Set-TaskbarOptions -Size Small -Lock -Dock Bottom
+#Update-ExecutionPolicy Unrestricted
 
 
 # -------------------------------------------------
