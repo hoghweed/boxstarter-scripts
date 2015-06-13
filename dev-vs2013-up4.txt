@@ -16,13 +16,15 @@ Update-ExecutionPolicy Unrestricted
 choco install adobereader
 choco install javaruntime
 choco install fiddler4 -y
-choco install googlechrome -y
 choco install Firefox -y
 choco install GoogleChrome -y
 choco install nodejs.install -y
 choco install notepadplusplus.install -y
 choco install sublimetext3 -y
 choco install sublimetext3.packagecontrol -y
+choco install tortoisesvn -y
+choco install beyondcompare -y
+choco install linqpad4 -y
 
 
 # -------------------------------------------------
